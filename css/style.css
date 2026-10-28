@@ -1,0 +1,249 @@
+/* House style — main #14532D ground #F7FAF8 ink #1F2A24 accent #E07A5F
+   headings: Merriweather, serif   body: Open Sans, sans-serif */
+
+
+/* 1 · house style — Member 1, Dhruv Sethi
+   body, h1, h2, a, header, nav, footer */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #F7FAF8;
+  color: #1F2A24;
+  font-family: "Open Sans", system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-family: "Merriweather", Georgia, serif;
+  font-weight: 700;
+}
+
+h2 {
+  color: #14532D;
+}
+
+header {
+  background: #14532D;
+  color: #F7FAF8;
+}
+
+header p {
+  margin: 0.5rem 0 0;
+}
+
+nav {
+  background: #1F2A24;
+}
+
+nav a {
+  color: #F7FAF8;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+a {
+  color: #14532D;
+}
+
+header, main, aside, footer {
+  padding: 1rem;
+}
+
+footer {
+  border-top: 3px solid #E07A5F;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+
+img, input, select, textarea {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+
+/* 2 · layout — Member 1, Dhruv Sethi
+   the grid, the nav row, the cards, the table wrapper */
+
+nav {
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0.75rem 1rem;
+}
+
+.logo {
+  width: 3.5rem;
+  height: auto;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.cards li {
+  flex: 1 1 12rem;
+  padding: 1rem;
+  border: 1px solid #14532D;
+  border-top: 4px solid #E07A5F;
+}
+
+.cards h3 {
+  margin-top: 0;
+  font-size: 1.05rem;
+}
+
+.cards p {
+  margin-bottom: 0;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+aside {
+  border-left: 1px solid #14532D;
+}
+
+aside h2 {
+  font-size: 1.2rem;
+}
+
+body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 18rem;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "main aside"
+    "footer footer";
+}
+
+header { grid-area: header; }
+nav { grid-area: nav; }
+main { grid-area: main; }
+aside { grid-area: aside; }
+footer { grid-area: footer; }
+
+
+/* 3 · index.html, about.html, contact.html, how-it-works.html — Member 1, Dhruv Sethi
+   the steps, the proof table, the address */
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.steps li {
+  flex: 1 1 14rem;
+  padding: 1rem;
+  border-left: 4px solid #14532D;
+}
+
+.steps h3 {
+  margin-top: 0;
+  font-size: 1.05rem;
+}
+
+.steps p {
+  margin-bottom: 0;
+}
+
+.proof {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.proof caption {
+  text-align: left;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+}
+
+.proof th,
+.proof td {
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid #14532D;
+}
+
+.proof thead th {
+  background: #14532D;
+  color: #F7FAF8;
+}
+
+address {
+  font-style: normal;
+  padding-left: 1rem;
+  border-left: 4px solid #E07A5F;
+}
+
+
+/* 4 · found-items.html, report-lost.html, report-found.html, register.html — Member 2, Jerry Mudola
+   the forms, the found items table, the warning */
+
+
+/* 5 · phone — Member 1, Dhruv Sethi — keep this last */
+
+@media (max-width: 700px) {
+  body {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "aside"
+      "footer";
+  }
+
+  nav {
+    position: static;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 2.5rem;
+  }
+
+  aside {
+    border-left: 0;
+    border-top: 1px solid #14532D;
+  }
+}
