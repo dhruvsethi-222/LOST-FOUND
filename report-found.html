@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Report a found item — The Solution Lost and Found</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&amp;family=Open+Sans:wght@400;600&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+
+  <header>
+    <h1>
+      <img src="img/logo.png" alt="" class="logo">
+      The Solution Lost and Found
+    </h1>
+    <p>Lost something on campus, or found something that is not yours? Report it here, and the security office gets it home.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="how-it-works.html">How it works</a></li>
+      <li><a href="found-items.html">Found items</a></li>
+      <li><a href="report-lost.html">Report lost</a></li>
+      <li><a href="report-found.html">Report found</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Report a found item</h2>
+      <p>Thank you for stopping. Tell us what you found and where, then hand it in to the security office on the ground floor of the Student Centre. The office keeps it safe, and gives it only to the person who proves it is theirs.</p>
+      <p class="warning"><strong>Do not type serial numbers, names on cards, or what is inside a bag.</strong> The officer records those privately when you hand the item in. They are how the real owner is recognised.</p>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>The item</legend>
+          <label for="found-category">Category</label>
+          <select id="found-category" name="category" required>
+            <option value="">Choose a category</option>
+            <option value="1">Electronics</option>
+            <option value="2">ID and cards</option>
+            <option value="3">Keys</option>
+            <option value="4">Bags and wallets</option>
+            <option value="5">Clothing</option>
+            <option value="6">Books and stationery</option>
+            <option value="7">Other</option>
+          </select>
+          <label for="found-description">Description: colour, brand and size only</label>
+          <textarea id="found-description" name="description" rows="4" maxlength="500" required></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>When and where</legend>
+          <label for="found-date">Date you found it</label>
+          <input type="date" id="found-date" name="date_found" max="2026-10-30" required>
+          <label for="found-place">Place you found it</label>
+          <select id="found-place" name="place" required>
+            <option value="">Choose a place</option>
+            <option value="1">Library</option>
+            <option value="2">Cafeteria</option>
+            <option value="3">Lecture halls</option>
+            <option value="4">Computer labs</option>
+            <option value="5">Student Centre</option>
+            <option value="6">Sports ground</option>
+            <option value="7">Car park</option>
+            <option value="8">Main gate</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Where is it now?</legend>
+          <label for="held-security" class="choice">
+            <input type="radio" id="held-security" name="held_at" value="SECURITY" required>
+            I have handed it in to the security office
+          </label>
+          <label for="held-finder" class="choice">
+            <input type="radio" id="held-finder" name="held_at" value="FINDER">
+            I still have it, and will hand it in within two working days
+          </label>
+          <label for="held-office" class="choice">
+            <input type="radio" id="held-office" name="held_at" value="STAFF_OFFICE">
+            It is at a staff office (staff only)
+          </label>
+        </fieldset>
+
+        <button type="submit">Report found item</button>
+      </form>
+    </section>
+  </main>
+
+  <aside>
+    <h2>Security office</h2>
+    <p>Ground floor, Student Centre</p>
+    <ul>
+      <li>Monday to Friday, 8.00am to 6.00pm</li>
+      <li>Saturday, 9.00am to 1.00pm</li>
+      <li>Sunday and public holidays: closed</li>
+    </ul>
+    <p>Desk: <a href="tel:+254720000000">0720 000 000</a></p>
+
+    <h2>Notices</h2>
+    <ul>
+      <li>Found items are kept for <strong>90 days</strong>, then donated, recycled or returned to whoever issued them.</li>
+      <li>Bring your student or staff ID card whenever you collect an item.</li>
+      <li>Found cash? Hand it straight to the security office.</li>
+    </ul>
+  </aside>
+
+  <footer>
+    <p>The Solution Lost and Found, Security Office, Ground floor, Student Centre.</p>
+    <p>Site built by The Solution: Dhruv Sethi and Jerry Mudola, DBT Year 1, 2026.</p>
+  </footer>
+
+</body>
+</html>
