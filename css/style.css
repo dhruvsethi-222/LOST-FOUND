@@ -216,6 +216,98 @@ address {
 /* 4 · found-items.html, report-lost.html, report-found.html, register.html — Member 2, Jerry Mudola
    the forms, the found items table, the warning */
 
+fieldset {
+  border: 1px solid #14532D;
+  margin: 0 0 1rem;
+  padding: 1rem;
+}
+
+legend {
+  padding: 0 0.5rem;
+  font-family: "Merriweather", Georgia, serif;
+  font-weight: 700;
+  color: #14532D;
+}
+
+label {
+  display: block;
+  margin: 0.75rem 0 0.25rem;
+  font-weight: 600;
+}
+
+input,
+select,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid #1F2A24;
+  background: #F7FAF8;
+  color: #1F2A24;
+  font: inherit;
+}
+
+.choice {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 400;
+}
+
+.choice input {
+  width: auto;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  border: 0;
+  background: #14532D;
+  color: #F7FAF8;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1F2A24;
+}
+
+.warning {
+  padding: 0.75rem 1rem;
+  border-left: 4px solid #E07A5F;
+  background: #1F2A24;
+  color: #F7FAF8;
+}
+
+.items {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.items caption {
+  text-align: left;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+}
+
+.items th,
+.items td {
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #14532D;
+}
+
+.items thead th {
+  background: #14532D;
+  color: #F7FAF8;
+}
+
+.items tfoot th,
+.items tfoot td {
+  border-top: 2px solid #1F2A24;
+  font-weight: 600;
+}
+
 
 /* 5 · phone — Member 1, Dhruv Sethi — keep this last */
 

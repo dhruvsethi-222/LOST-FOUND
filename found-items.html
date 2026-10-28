@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Found items — The Solution Lost and Found</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&amp;family=Open+Sans:wght@400;600&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+
+  <header>
+    <h1>
+      <img src="img/logo.png" alt="" class="logo">
+      The Solution Lost and Found
+    </h1>
+    <p>Lost something on campus, or found something that is not yours? Report it here, and the security office gets it home.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="how-it-works.html">How it works</a></li>
+      <li><a href="found-items.html">Found items</a></li>
+      <li><a href="report-lost.html">Report lost</a></li>
+      <li><a href="report-found.html">Report found</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Found items</h2>
+      <p>Everything handed in to the security office in the last two weeks. To protect owners, the list shows only the kind of item, where it was found and when. The description, serial numbers and anything inside stay with the security office, and they are what the officer asks you about when you claim.</p>
+
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Search found items</legend>
+          <label for="search-category">Category</label>
+          <select id="search-category" name="category">
+            <option value="">Any category</option>
+            <option value="1">Electronics</option>
+            <option value="2">ID and cards</option>
+            <option value="3">Keys</option>
+            <option value="4">Bags and wallets</option>
+            <option value="5">Clothing</option>
+            <option value="6">Books and stationery</option>
+            <option value="7">Other</option>
+          </select>
+          <label for="search-place">Place found</label>
+          <select id="search-place" name="place">
+            <option value="">Anywhere on campus</option>
+            <option value="1">Library</option>
+            <option value="2">Cafeteria</option>
+            <option value="3">Lecture halls</option>
+            <option value="4">Computer labs</option>
+            <option value="5">Student Centre</option>
+            <option value="6">Sports ground</option>
+            <option value="7">Car park</option>
+            <option value="8">Main gate</option>
+          </select>
+          <label for="search-date">Found on or after</label>
+          <input type="date" id="search-date" name="date_from" max="2026-10-30">
+        </fieldset>
+        <button type="submit">Search found items</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Handed in, 13 to 26 October 2026</h2>
+      <div class="table-scroll">
+        <table class="items">
+          <caption>Items held by the security office</caption>
+          <thead>
+            <tr>
+              <th scope="col">Reference</th>
+              <th scope="col">Category</th>
+              <th scope="col">Place found</th>
+              <th scope="col">Date found</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>LF-0146</td>
+              <td>Electronics</td>
+              <td>Computer labs</td>
+              <td>26 Oct 2026</td>
+              <td>Waiting</td>
+            </tr>
+            <tr>
+              <td>LF-0145</td>
+              <td>ID and cards</td>
+              <td>Cafeteria</td>
+              <td>24 Oct 2026</td>
+              <td>Waiting</td>
+            </tr>
+            <tr>
+              <td>LF-0144</td>
+              <td>Keys</td>
+              <td>Car park</td>
+              <td>23 Oct 2026</td>
+              <td>Claim pending</td>
+            </tr>
+            <tr>
+              <td>LF-0143</td>
+              <td>Bags and wallets</td>
+              <td>Library</td>
+              <td>22 Oct 2026</td>
+              <td>Waiting</td>
+            </tr>
+            <tr>
+              <td>LF-0142</td>
+              <td>Clothing</td>
+              <td>Sports ground</td>
+              <td>21 Oct 2026</td>
+              <td>Waiting</td>
+            </tr>
+            <tr>
+              <td>LF-0141</td>
+              <td>Electronics</td>
+              <td>Lecture halls</td>
+              <td>20 Oct 2026</td>
+              <td>Returned</td>
+            </tr>
+            <tr>
+              <td>LF-0140</td>
+              <td>Books and stationery</td>
+              <td>Library</td>
+              <td>19 Oct 2026</td>
+              <td>Waiting</td>
+            </tr>
+            <tr>
+              <td>LF-0139</td>
+              <td>Other</td>
+              <td>Student Centre</td>
+              <td>16 Oct 2026</td>
+              <td>Claim pending</td>
+            </tr>
+            <tr>
+              <td>LF-0138</td>
+              <td>ID and cards</td>
+              <td>Main gate</td>
+              <td>15 Oct 2026</td>
+              <td>Returned</td>
+            </tr>
+            <tr>
+              <td>LF-0137</td>
+              <td>Electronics</td>
+              <td>Cafeteria</td>
+              <td>13 Oct 2026</td>
+              <td>Waiting</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th colspan="4" scope="row">Waiting to be claimed</th>
+              <td>6</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <p>Claim pending means an owner has sent a claim and the security officer is checking it. Returned items stay on the list for one week after they are collected, so the finder can see that the item reached its owner.</p>
+      <p>Seen something that could be yours? Note its reference and take it to the security office with your student or staff ID card.</p>
+    </section>
+  </main>
+
+  <aside>
+    <h2>Security office</h2>
+    <p>Ground floor, Student Centre</p>
+    <ul>
+      <li>Monday to Friday, 8.00am to 6.00pm</li>
+      <li>Saturday, 9.00am to 1.00pm</li>
+      <li>Sunday and public holidays: closed</li>
+    </ul>
+    <p>Desk: <a href="tel:+254720000000">0720 000 000</a></p>
+
+    <h2>Notices</h2>
+    <ul>
+      <li>Found items are kept for <strong>90 days</strong>, then donated, recycled or returned to whoever issued them.</li>
+      <li>Bring your student or staff ID card whenever you collect an item.</li>
+      <li>Found cash? Hand it straight to the security office.</li>
+    </ul>
+  </aside>
+
+  <footer>
+    <p>The Solution Lost and Found, Security Office, Ground floor, Student Centre.</p>
+    <p>Site built by The Solution: Dhruv Sethi and Jerry Mudola, DBT Year 1, 2026.</p>
+  </footer>
+
+</body>
+</html>
